@@ -1,0 +1,154 @@
+*{
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Dosis', sans-serif;
+    font-family: 'Lora', serif;
+    font-family: 'Open Sans', sans-serif;
+}
+
+:root{
+    --principal: #5eb319;
+    --secundario: #f1eeee;
+    --letras: #222; 
+    --otro: #FFFFFF;  
+}
+body{
+    color: var(--letras);
+}
+
+.menu-dashboard{
+    max-width: 100px;
+    height:100vh;
+    background: var(--principal);
+    padding: 20px;
+    transition: max-width.3s ease;
+    border-radius: 0px 25px 15px 0;
+}
+.top-menu{
+    align-items: flex-start;
+
+}
+.top-menu .logo{
+    align-items: center;
+}
+.top-menu .logo img{
+    width: 100%;
+    transition: width.3s ease;
+    padding-bottom: 25px;
+
+}
+.top-menu .logo span{
+    display: none;
+    justify-content: center;
+    text-align: center;
+    transition: width.3s ease;
+}
+
+.top-menu .barra{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+    padding-bottom: 25px;
+}
+.top-menu .barra i{
+    font-size: 20px;
+}
+
+.person{
+    display: flex;
+    width: 100%;
+    margin: 25px 0;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+
+}
+
+.person i{
+    font-size: 25px;
+}
+.person span{
+    opacity: 0;
+    transition: opacity.3s ease;
+    display: none;
+    transition: width.3s ease;
+    color: var(--letras);
+}
+
+.Menu .enlace{
+    width: 100%;
+    padding: 20px 0 20px 17px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all.3 ease;
+}
+.Menu .enlace:hover{
+    background-color: var(--secundario);
+    border-radius: 10px;
+}
+.Menu .enlace i{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.Menu .enlace span{
+    opacity: 0;
+    transition: opacity.3s ease;
+}
+
+
+.salida{
+    width: 100%;
+    padding: 20px 0 20px 17px;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+
+    margin-bottom: 20px;
+    cursor: pointer;
+    transition: all.3 ease;
+}
+.salida:hover{
+    background-color: var(--secundario);
+    border-radius: 10px;
+}
+.salida span{
+    opacity: 0;
+    transition: opacity.3s ease;
+    display: none;
+    color: var(--letras);
+}
+
+.salida i{
+    margin-right: 20px;
+    font-size: 20px;
+}
+.menu-dashboard.open{
+    max-width: 220px;
+}
+.menu-dashboard.open .top-menu .logo{
+    width: auto;
+    padding: 20px;
+}
+.menu-dashboard.open .salida span{
+    width: auto;
+    padding: 20px;
+    opacity: 1;
+}
+.menu-dashboard.open .top-menu .logo span{
+    opacity: 1;
+}
+
+.menu-dashboard.open .Menu .enlace{
+    width: auto;
+    padding: 20px;
+}
+.menu-dashboard.open .Menu .enlace span{
+    opacity: 1;
+}
+
